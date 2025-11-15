@@ -1,19 +1,52 @@
 ---
-layout: archive
+layout: single
 permalink: /year-archive/
-title: "Blog posts"
+title: "Experience"
 author_profile: true
 redirect_from:
   - /wordpress/blog-posts/
 ---
 
-{% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+## Work Experience
+
+### Haptag AI — Project Contributor, Research Department (May 2025 – Present)
+- Conducted research on Large Language Models for cybersecurity, implementing a DeepLog-based LSTM architecture for log anomaly detection with end-to-end data parsing, training, and inference.
+- Built a Drain3-based log parsing system to convert raw logs into structured CSV format.
+- Achieved 98.76% precision in anomaly detection via combined sequence- and token-level evaluation.
+- Collaborated with engineering teams on model deployment, full-stack integration, testing, and performance benchmarking.
+
+### Asakana — Software Engineer (June 2025 – August 2025)
+- Built a Gen AI–powered SMS chatbot automating seafood order placement between businesses and suppliers, replacing manual calls and improving efficiency; backend implemented with Node.js, Express, and MongoDB.
+- Integrated Twilio SMS and OpenAI LLMs to parse natural text into structured orders.
+- Deployed on Render and piloted with 15 suppliers, receiving positive usability feedback.
+
+### Visa Inc. — Software Engineer Intern (May 2023 – July 2023)
+- Developed a Hive Lineage Connector for the Visa Datahub Metadata platform, expanding from single-query lineage to parsing hundreds of queries for key properties.
+- Co-implemented a Java REST Emitter to transmit lineage details to Datahub.
+- Authored extensive test suites to protect future features, cutting total project time by 20 hours.
+
+## Research Experience
+
+### Columbia University Irving Medical Center — Research under Prof. Junhao Wen (April 2025 – Present)
+- Analyzing biological versus chronological brain-age models using the ADNI dataset to support early Alzheimer’s detection.
+- Conducting statistical modeling and calibration to assess biological age as a neurodegenerative biomarker.
+
+### Columbia University, CRIS Lab (February 2025 – July 2025)
+- Modeled drone swarm dynamics with game-theoretic and potential-field methods rooted in Mean Field Game theory.
+- Analyzed stability and convergence of formation-control equations and implemented Python simulations.
+- Developed regularized potentials to improve numerical stability in high-density multi-agent systems.
+
+### Columbia University — Research with Prof. Xuan (Sharon) Di (January 2025 – May 2025)
+- Formulated Mean Field Game models for multi-class, multi-lane traffic flow by coupling HJB and continuity equations.
+- Built a hybrid control framework integrating discrete lane switching with continuous velocity optimization.
+- Implemented simulations using stochastic differential equations and PINNs for HJB approximation.
+
+### Independent Research — Numerical Methods for HJB Equations and Mean Field Games (September 2024 – December 2025)
+- Studied numerical methods for coupled HJB–Kolmogorov systems in Mean Field Games.
+- Implemented finite-difference and Picard-iteration schemes to analyze convergence and stability.
+- Ran parameter-sensitivity simulations; code is available on GitHub.
+
+### Indian Institute of Technology, Guwahati — Research under Prof. Ayon Ganguly (July 2023 – May 2024)
+- Investigated Weibull distribution estimation with Type-I censored data using Bayesian techniques in Python.
+- Developed a SMOTE-inspired algorithm to mitigate bias in scale-parameter estimation.
+- Outlined future work on Bayesian estimation, synthetic data generation, and SMOTE-based efficiency improvements.
